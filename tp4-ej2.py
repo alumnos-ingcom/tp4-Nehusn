@@ -38,7 +38,7 @@ def suma_lenta():
 #Eso no. Esto:
 
 
-    if suma < 0:
+    if suma < 0 and (numero < 0 > otro_numero):
         while suma2 != suma:
             suma2 = numero_menor - 1
             print(f"Resultado de suma lenta: {numero_menor} - 1  =  {suma2}")
