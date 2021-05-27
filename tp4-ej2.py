@@ -1,9 +1,3 @@
-def prueba():
-    pass
-
-if __name__ == "__main__":
-    prueba()
-    
 def suma_lenta():
     suma = 0
     suma2=0
