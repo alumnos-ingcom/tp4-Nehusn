@@ -7,3 +7,4 @@ def funcion(mensaje):
     print(f"{mensaje}")
 mensaje=input("Texto: ")
 funcion(mensaje)
+#Tester 
