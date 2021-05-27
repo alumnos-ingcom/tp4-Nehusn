@@ -12,7 +12,7 @@ def suma_lenta():
     suma=numero+otro_numero
 
 #Aca se viene lo jodido
-    
+
     if numero > otro_numero:
         numero_menor=otro_numero
         print(f"\nEmpezamos desde:  {numero_menor}")
