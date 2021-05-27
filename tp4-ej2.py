@@ -1,31 +1,19 @@
 ################
-# Martín René - @martinvilu
+# Gastón Nehuen Rodriguez Valdez - @nehusn
 # Plantilla de ejercicio
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
-
-
-# Reemplazar por las funciones del ejercicio
-
-
 def prueba():
-    pass
+    print("SUMA LENTA\n")
+    numero = int(input("Ingrese el numero A: "))
+    otro_numero= int(input("Ingrese el numero B: "))
+    suma_lenta(numero, otro_numero)
 
-if __name__ == "__main__":
-    prueba()
-
-def suma_lenta():
+def suma_lenta(numero, otro_numero):
     suma = 0
     suma_en_pantalla=0
     numero_menor=0
-    print("SUMA LENTA\n")
-
-#Titulo
-    numero = int(input("Ingrese el numero A: "))
-    suma = numero
-    otro_numero= int(input("Ingrese el numero B: "))
     suma=numero+otro_numero
-
 #Aca se viene lo jodido
     if numero > otro_numero:
         numero_menor=otro_numero
@@ -49,4 +37,6 @@ def suma_lenta():
             numero_menor=numero_menor+1
             
     print(f"El resultado final es:  {suma}")
-suma_lenta()
+
+if __name__ == "__main__":
+    prueba()
