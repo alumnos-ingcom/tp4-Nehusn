@@ -6,7 +6,7 @@
 def prueba():
     saludo=" "
     saludo_titulo= saludo.upper()
-    print(saludo_titulo)
+    print(saludo_titulo+"\n")
 
     
 if __name__ == "__main__":
