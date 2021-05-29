@@ -4,7 +4,10 @@
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 def prueba():
-    print("SUMA LENTA\n")
+    saludo="Suma lenta"
+    saludo_titulo= saludo.upper()
+    print(saludo_titulo+ "\n")
+    
     numero = int(input("Ingrese el numero A: "))
     otro_numero= int(input("Ingrese el numero B: "))
     suma_lenta(numero, otro_numero)
