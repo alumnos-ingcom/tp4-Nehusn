@@ -4,7 +4,9 @@
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 def prueba():
-    print("CONVERTOR DE GRADOS")
+    saludo="Conversión de temperaturas"
+    saludo_titulo= saludo.upper()
+    print(saludo_titulo+ "\n")
 
 def convertir_a_fahrenheit(centigrados):
     fahrenheit= (centigrados * 9/5) + 32
