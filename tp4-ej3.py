@@ -7,7 +7,13 @@ def prueba():
     saludo="Conversión de temperaturas"
     saludo_titulo= saludo.upper()
     print(saludo_titulo+ "\n")
-
+###################################################################
+    
+    centigrados=float(input("Ingrese el grado fahrenheit: "))
+    fahrenheit=float(input("Ingrese grado centigrado: "))
+    convertir_a_centigrados(fahrenheit)
+    convertir_a_fahrenheit(centigrados)
+    
 def convertir_a_fahrenheit(centigrados):
     fahrenheit= (centigrados * 9/5) + 32
     print(f"Farenheit: {fahrenheit}°")
