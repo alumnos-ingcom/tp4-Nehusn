@@ -3,14 +3,7 @@
 # Plantilla de ejercicio
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
-def prueba():
-    saludo="Factores Primos "
-    saludo_titulo= saludo.upper()
-    print(saludo_titulo+"\n")
-    numero=int(input("Ingrese número: "))
-    
-    factores_primos(numero)
-       
+
 def factores_primos(numero):
     calculo=0
     global lista
@@ -67,6 +60,14 @@ def es_primo(calculo):
         lista=lista.append(calculo)
     else:
         pass
-        
+
+def prueba():
+    saludo="Factores Primos "
+    saludo_titulo= saludo.upper()
+    print(saludo_titulo+"\n")
+    numero=int(input("Ingrese número: "))
+    
+    factores_primos(numero)
+               
 if __name__ == "__main__":
     prueba()

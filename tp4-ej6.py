@@ -3,6 +3,16 @@
 # Plantilla de ejercicio
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
+
+def minimo(lista):
+    minimo=lista[0]
+    print(f"Minimo es: {minimo}")
+
+def maximo(lista):
+    lista.reverse()
+    maximo=lista[0]
+    print(f"Máximo es: {maximo}")
+
 def prueba():
     saludo="Máximo / Mínimo "
     saludo_titulo= saludo.upper()
@@ -19,14 +29,5 @@ def prueba():
         minimo(lista)
         maximo(lista)
 
-def minimo(lista):
-    minimo=lista[0]
-    print(f"Minimo es: {minimo}")
-
-def maximo(lista):
-    lista.reverse()
-    maximo=lista[0]
-    print(f"Máximo es: {maximo}")
-    
 if __name__ == "__main__":
     prueba()

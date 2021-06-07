@@ -3,12 +3,7 @@
 # Plantilla de ejercicio
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
-def prueba():
-    saludo="Números primos "
-    saludo_titulo= saludo.upper()
-    print(saludo_titulo+"\n")
-    numero=int(input("Ingrese un número: "))
-    es_primo(numero)
+
 def es_primo(numero):
     primos=[2,3,5,7,11]
     primo=False
@@ -54,6 +49,11 @@ def es_primo(numero):
     else:
         print(f"El numero {numero} no es primo")
         
-    
+def prueba():
+    saludo="Números primos "
+    saludo_titulo= saludo.upper()
+    print(saludo_titulo+"\n")
+    numero=int(input("Ingrese un número: "))
+    es_primo(numero)    
 if __name__ == "__main__":
     prueba()

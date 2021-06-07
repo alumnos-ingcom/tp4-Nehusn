@@ -3,13 +3,6 @@
 # Plantilla de ejercicio
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
-def prueba():
-    saludo="Restas sucesivas "
-    saludo_titulo= saludo.upper()
-    print(saludo_titulo+"\n")
-    dividendo=int(input("Ingrese el dividendo: "))
-    divisor=int(input("Ingrese el divisor: "))
-    division_lenta(dividendo, divisor)
 
 #Funcion   
 def division_lenta(dividendo, divisor):
@@ -71,6 +64,12 @@ def division_lenta(dividendo, divisor):
         print(f"\nEl cociente es: -{cociente_decimal},{cociente}")
         print(f"El resto es: {resto}")
         
-            
+def prueba():
+    saludo="Restas sucesivas "
+    saludo_titulo= saludo.upper()
+    print(saludo_titulo+"\n")
+    dividendo=int(input("Ingrese el dividendo: "))
+    divisor=int(input("Ingrese el divisor: "))
+    division_lenta(dividendo, divisor)            
 if __name__ == "__main__":
     prueba()
