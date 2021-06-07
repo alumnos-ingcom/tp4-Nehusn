@@ -6,11 +6,11 @@
 
 def compara(numero, otro_numero):
     if numero <  otro_numero:
-        print("\n-1")
+        retunr -1
     elif (numero == otro_numero):
-        print("\n0")
+        return 0
     else:
-        print("\n1")
+        return 1
         
 def prueba():
     saludo="Comparación de números"
@@ -19,6 +19,9 @@ def prueba():
     numero=int(input("Ingrese un número: "))
     otro_numero=int(input("Ingrese otro número: "))
     compara(numero, otro_numero)
+    resultado_compara=compara(numero, otro_numero)
+    print(resultado_compara)
+    
    
 if __name__ == "__main__":
     prueba()

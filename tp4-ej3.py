@@ -6,11 +6,11 @@
     
 def convertir_a_fahrenheit(centigrados):
     fahrenheit= (centigrados * 9/5) + 32
-    print(f"Farenheit: {fahrenheit}°")
+    return fahrenheit
 
 def convertir_a_centigrados(fahrenheit):
     centigrados= (fahrenheit - 32) * 5/9
-    print(f"Centigrados: {centigrados}°")
+    return centigrados
     
 def prueba():
     saludo="Conversión de temperaturas"
@@ -22,5 +22,10 @@ def prueba():
     fahrenheit=float(input("Ingrese grado centigrado: "))
     convertir_a_centigrados(fahrenheit)
     convertir_a_fahrenheit(centigrados)
+    exit_1=convertir_a_centigrados(fahrenheit)
+    exit_2=convertir_a_fahrenheit(centigrados)
+    print(f"Centigrados: {exit_1}°")
+    print(f"Farenheit: {exit_2}°")
+    
 if __name__ == "__main__":
     prueba()
