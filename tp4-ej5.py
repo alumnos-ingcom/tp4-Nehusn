@@ -6,11 +6,11 @@
 
 def signo(numero):
     if numero < 0:
-        print(f"{numero} es negativo")
+        return "-"
     elif numero==0:
-        print(f"{numero} es cero")
+        return 0
     else:
-        print(f"{numero} es positivo")
+        return "+"
         
 def prueba():
     saludo="Números positivos y negativos"
@@ -19,6 +19,13 @@ def prueba():
     numero=int(input("Ingrese un número: "))
     
     signo(numero)
-    
+    resultado_signo=signo(numero)
+    if resultado_signo=="-":
+        print(f"{numero} es negativo")
+    elif resultado_signo==0:
+        print(f"{numero} es cero")
+    elif resultado_signo=="+":
+        print(f"{numero} es positivo")
+        
 if __name__ == "__main__":
     prueba()
