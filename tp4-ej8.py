@@ -43,17 +43,21 @@ def es_primo(numero):
         divisible_por_once=True
     
     if primo==True:
-        print(f"El numero {numero} es primo")
+        return True
     elif divisible_por_dos==False and divisible_por_tres==False and divisible_por_cinco==False and divisible_por_siete==False and divisible_por_once==False:
-        print(f"El numero {numero} es primo")
+        return True
     else:
-        print(f"El numero {numero} no es primo")
+        return False
         
 def prueba():
     saludo="Números primos "
     saludo_titulo= saludo.upper()
     print(saludo_titulo+"\n")
     numero=int(input("Ingrese un número: "))
-    es_primo(numero)    
+    primo=es_primo(numero)
+    if primo==True:
+        print(f"El número {numero} es primo")
+    else:
+        print(f"El número {numero} no es primo")
 if __name__ == "__main__":
     prueba()
