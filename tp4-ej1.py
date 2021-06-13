@@ -3,8 +3,16 @@
 # Plantilla de ejercicio
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
-
-def numero_entre_valores(numero,valorA,valorB):
+def ingreso_entero_reintento():
+    while True:
+        valor=input("Ingrese un número entero: ")
+        try:
+            valor=int(valor)
+            return valor
+        except ValueError as err:
+            raise IngresoIncorrecto("No era un número!") from err
+######################
+def ingreso_entero_restringido(numero,valorA,valorB):
     numero_mayor=0
     numero_menor=0
     if valorA < valorB:
@@ -17,6 +25,8 @@ def numero_entre_valores(numero,valorA,valorB):
         return True
     else:
         return False
+    
+#######################          
 def prueba():
     saludo="Flor "
     saludo_titulo= saludo.upper()
@@ -24,9 +34,15 @@ def prueba():
     valorA=int(input("Ingrese un valor: "))
     valorB=int(input("Ingrese otro valor: "))
     numero=int(input("Ingrese un numero entre esos valores: "))
-    numero_entre_valores(numero,valorA,valorB)
-    resultado=numero_entre_valores
-    print(resultado)
+    
+    resultado_restrigido=ingreso_entero_restringido(numero,valorA,valorB)
+    resultado_reintento=ingreso_entero_reintento()
+    
+    ingreso_entero_restringido(numero,valorA,valorB)
+    ingreso_entero_reintento()
+    
+    print(resultado_restrigido)
+    print(resultado_reintento)
     
 if __name__ == "__main__":
     prueba()
