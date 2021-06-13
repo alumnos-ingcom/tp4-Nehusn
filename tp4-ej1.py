@@ -4,13 +4,19 @@
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 def ingreso_entero_reintento():
-    while True:
+    intentos=0
+    while intentos<5:
         valor=input("Ingrese un número entero: ")
         try:
             valor=int(valor)
             return valor
         except ValueError as err:
+            intentos=intentos+1
             raise IngresoIncorrecto("No era un número!") from err
+    if intentos==5:
+        print("Superaste la cantidad máxima de intentos")
+    else:
+        pass
 ######################
 def ingreso_entero_restringido(numero,valorA,valorB):
     numero_mayor=0
@@ -34,7 +40,6 @@ def prueba():
     valorA=int(input("Ingrese un valor: "))
     valorB=int(input("Ingrese otro valor: "))
     numero=int(input("Ingrese un numero entre esos valores: "))
-    
     resultado_restrigido=ingreso_entero_restringido(numero,valorA,valorB)
     resultado_reintento=ingreso_entero_reintento()
     
