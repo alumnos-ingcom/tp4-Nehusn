@@ -6,8 +6,10 @@
 
 def es_primo(numero):
     contador_primo=0
-    for i in range(1,1000):
-        if numero / i == 1 or numero / i == numero:
+    for i in range(1,10):
+        if numero / i == 1:
+            contador_primo=contador_primo+1
+        if numero / i == numero:
             contador_primo=contador_primo+1
         else:
             pass

@@ -52,15 +52,19 @@ def division_lenta(dividendo, divisor):
 
 #Imprimir resultados
     if decimal==False and negativo==False:
+#         1
         print(f"\nEl cociente es: {cociente}")
         print(f"El resto es: {resto}")
     elif (decimal == True) and (negativo==False):
+#         2
         print(f"\nEl cociente es: {cociente_decimal},{cociente}")
         print(f"El resto es: {resto}")
     elif (decimal==False) and (negativo==True):
+#         3
         print(f"\nEl cociente es: -{cociente}")
         print(f"El resto es: {resto}")
     elif (decimal==True) and (negativo==True):
+#         4
         print(f"\nEl cociente es: -{cociente_decimal},{cociente}")
         print(f"El resto es: {resto}")
         
@@ -70,6 +74,8 @@ def prueba():
     print(saludo_titulo+"\n")
     dividendo=int(input("Ingrese el dividendo: "))
     divisor=int(input("Ingrese el divisor: "))
-    division_lenta(dividendo, divisor)            
+    division_lenta(dividendo, divisor)
+    
+        
 if __name__ == "__main__":
     prueba()
